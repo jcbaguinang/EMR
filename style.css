@@ -1,0 +1,110 @@
+.posts{
+	background: #f6f3f3;
+	font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.users {
+  background: #f6f3f3;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  width: 99%;
+}
+.navi {
+    font-family:"Segoe UI Semibold";
+    float: left;
+    border-right:1px solid #bbb;
+      list-style-type: none;
+}
+
+.navi:last-child {
+    border-right: none;
+}
+.navi a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    color:black;
+    text-decoration: none;
+}
+
+.navi a:hover:not(.active) {
+    background-color: #ffd633;
+
+}
+.nav-grid {
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 1px 1px 1px 1px;
+  background-color: #4CAF50;
+  list-style-type: none;
+  display: block;
+  margin: 0px -8px 0px -10px;
+  overflow: hidden;
+  width: auto;
+  float: right;
+  margin-right: 10%;
+}
+.comments {
+	padding: 5px;
+	border-bottom: 1px solid #d4d1d1;
+}
+small {
+	font-size: 13px;
+}
+.content {
+	height: 100px;
+  width: 300px;
+}
+button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    margin-top: 5px;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.message {
+  color: red;
+}
+.blogs {
+  background: #f6f3f3;
+  font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+  border-radius: 4px;
+  padding: 30px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.blogs input {
+  margin-left: 33px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.blogs button {
+  font-size: 15px;
+  padding: 10px;
+}
+
+.posts button {
+  font-size: 12px;
+  padding: 4px;
+}
+input {
+  padding: 2px;
+}
