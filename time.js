@@ -143,3 +143,16 @@ function storeTime(name, time){
 function getFieldTimes(){
     return field_times;
 }
+
+function allFields(username){
+  e.preventDefault();
+  var field_times = this.getFieldTimes();
+  $.ajax({
+    type:'POST',
+    data: {user: username, fields: field_times},
+    url:'record.php',
+    success:function(data) {
+      alert(data);
+    }
+  });
+}
