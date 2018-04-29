@@ -1,5 +1,6 @@
 var field_times = [];
 var uniqueNames = [];
+var json_times = [];
 var fields  = [];
 function storefunction() {
     var fields = document.getElementsByTagName("input");
@@ -145,14 +146,14 @@ function getFieldTimes(){
 }
 
 function allFields(username){
-  e.preventDefault();
-  var field_times = this.getFieldTimes();
+  console.log(username);
+  var field_times = JSON.stringify(this.getFieldTimes());
+  console.log(field_times);
   $.ajax({
-    type:'POST',
-    data: {user: username, fields: field_times},
     url:'record.php',
-    success:function(data) {
-      alert(data);
-    }
+    type:'POST',
+    data: {'fields': field_times, 'user': username},
+    dataType: 'json',
+      encode: true
   });
 }
