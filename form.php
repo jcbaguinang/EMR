@@ -3,13 +3,24 @@
 <head>
 	<title></title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.jss"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+	<script src="time.js"> </script>
 </head>
+
+<?php
+	$username = $_SESSION["username"];
+?>
+
 <body onload="storefunction();">
     
     <div id="demo">
 	 	
 	</div> 
-	<form action="stats.php">
+	<form action="">
 		<div>Name:
 			<input type="text" placeholder="Last Name" name="last_name" required>
 			<input type="text" placeholder="First Name" name="first_name"  required>
@@ -88,14 +99,8 @@
 				<input type="text" name="medical_notes"  required>
 			</div>
 		</div>
-		<button type="submit" >Submit</button>
 	</form>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.jss"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<script src="time.js"> </script>	
+	<button onclick="allFields('<?php echo $username ?>')" >Submit</button>
+</body>	
 	
 </html>
