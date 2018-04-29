@@ -10,9 +10,11 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
 	<script src="time.js"> </script>
 </head>
+
 <?php
 	$username = $_SESSION["username"];
 ?>
+
 <body onload="storefunction();">
     
     <div id="demo">
