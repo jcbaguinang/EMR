@@ -4,10 +4,6 @@
 	<title></title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<?php
-// Start the session
-session_start();
-?>
 <body onload="storefunction();">
     
     <div id="demo">

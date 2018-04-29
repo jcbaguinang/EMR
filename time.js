@@ -112,6 +112,7 @@ function storefunction() {
         timeStopped = null;
         document.getElementById("demo").innerHTML = "00:00:00.000";
         console.log(event.srcElement.name + " " + timeElapsed.getTime());
+         console.log("MARia");
         storeTime(event.srcElement.name, timeElapsed.getTime());
         (timeBegan = null),
             (timeStopped = null),
@@ -128,6 +129,7 @@ function storefunction() {
 function storeTime(name, time){
     console.log(name);
     console.log(time);
+    console.log("MARia");
     for(var i=0; i<field_times.length; i++){
         
          if(field_times[i].name == name){
@@ -135,8 +137,12 @@ function storeTime(name, time){
              field_times[i].time = field_times[i].time + time;
          }
     }
+    
     console.log(field_times);
-    window.sessionStorage.setItem("field_items", field_times);
+     
+    console.log(JSON.stringify(field_times));
+   
+    window.sessionStorage.setItem("field_items", JSON.stringify(field_times));
 }
 
 
