@@ -1,3 +1,4 @@
+
 <nav class="navbar" id="navigation">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
@@ -12,8 +13,7 @@
 			}
 		);
 	</script>
-	<div class="nav-grid">
-		<li class="navi"><a href="<?php echo "profile.php?username=".$username?>"><?php echo "@".$username?></a></li>
-		<li class="navi"><a href="logout.php">Logout</a></li>
+	<div class="nav-style nav-grid ">
+		<li class="navi"><a style="color: white;" href="logout.php">Logout</a></li>
 	</div>
 </nav>
