@@ -11,6 +11,7 @@ if ($_SESSION==null) {
 <head>
 	<title>Home</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="form.css">
 </head>
 <body>
 <?php
@@ -37,15 +38,13 @@ if ($_SESSION==null) {
 				break;
 
 		    }
-
 		}
-
 	}
 	$login = $_SESSION["login"];
 	$username = $_SESSION["username"];
 	if ($login==1) {
 		include('nav.php');
-		echo "<h3 align=\"center\">Welcome ".$username."!</h3><br><br>";
+		echo "<br><br><br><hr><br>";
 		$sql = "SELECT id, title, post_date, content, author FROM blogs ORDER BY post_date DESC";
 		$result = $conn->query($sql);
 		include('form.php');
