@@ -17,8 +17,11 @@
 ?>
 
 <body onload="storefunction();">
+	<div id="demo">
+		
+	</div>
     <div class="rcorners1">
-		<form action="">
+		<form action="" method="POST">
 			<div>
 				<i>Name:<i> &emsp;&nbsp;
 				<input type="text" placeholder="Last Name" name="last_name" required>
