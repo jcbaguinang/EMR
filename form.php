@@ -45,7 +45,7 @@
 
 			<div>
 				Contact Details: &nbsp;
-				<input type="number" name="contact_number" placeholder="Cellphone number">&emsp;
+				<input type="number" name="contact_number" placeholder="Cellphone Number">&emsp;
 				<input type="email" name="email" placeholder="Email Address">
 			</div><br>
 
@@ -75,6 +75,11 @@
 					<input type="text" name="emergency_last_name"  placeholder="Last Name" required> 
 					<input type="text" name="emergency_first_name" placeholder="First Name" required>
 					<input type="text" name="emergency_middle_initial" placeholder="Middle Initial" required>
+				</div>
+				
+				<div>
+					&emsp;Contact Number:
+					<input type="text" name="emergency_cellphone_number" placeholder="Cellphone Number">
 				</div>
 				
 				<div>
