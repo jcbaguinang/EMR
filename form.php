@@ -17,7 +17,7 @@
 ?>
 
 <body onload="storefunction();">
-	<div id="demo">
+	<div id="demo" style="display: none;">
 		
 	</div>
     <div class="rcorners1">
@@ -85,7 +85,7 @@
 				<div>
 					&emsp;Address: &emsp;&nbsp;&nbsp;
 					<input type="text" name="emergency_barangay" placeholder="Barangay" required>
-					<input type="text" name="emergency_city" placeholder="City">
+					<input type="text" name="emergency_city" placeholder="City/Town">
 					<input type="text" name="emergency_province" placeholder="Province" required>
 				</div><hr>
 
