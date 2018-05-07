@@ -77,10 +77,6 @@
 					<input type="text" name="emergency_middle_initial" placeholder="Middle Initial" required>
 				</div>
 				
-				<div>
-					&emsp;Contact Number:
-					<input type="text" name="emergency_cellphone_number" placeholder="Cellphone Number">
-				</div>
 				
 				<div>
 					&emsp;Relationship:
@@ -92,6 +88,11 @@
 					<input type="text" name="emergency_barangay" placeholder="Barangay" required>
 					<input type="text" name="emergency_city" placeholder="City/Town">
 					<input type="text" name="emergency_province" placeholder="Province" required>
+				</div>
+
+				<div>
+					&emsp;Contact #:&emsp;
+					<input type="text" name="emergency_cellphone_number" placeholder="Cellphone Number">
 				</div><hr>
 
 				<div>
